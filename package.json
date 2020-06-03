@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/microsoft/BotFramework-WebChat/tree/master/packages/component#readme",
   "scripts": {
-    "prepare": "npm run build",
     "build": "npm run build:typescript && npm run build:babel && npm run build:globalize",
     "build:babel": "babel src --copy-files --extensions .js,.ts,.tsx --ignore **/*.spec.js,**/*.spec.ts,**/*.spec.tsx,**/*.test.js,**/*.test.ts,**/*.test.tsx,__tests__/**/*.js,__tests__/**/*.ts,__tests__/**/*.tsx --no-copy-ignored --out-dir lib --verbose",
     "build:globalize": "node scripts/createPrecompiledGlobalize.js",
@@ -54,7 +53,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "botframework-webchat-core": "git://github.com/mdable2/botframework-webchat-core.git",
+    "botframework-webchat-core": "https://github.com/mdable2/botframework-webchat-core.git",
     "classnames": "2.2.6",
     "event-target-shim": "5.0.1",
     "event-target-shim-es5": "1.1.0",
